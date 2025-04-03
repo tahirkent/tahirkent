@@ -5,85 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tahirkent Yapı & Tasarım</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #e0e0e0;
-      text-align: center;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #222;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    footer {
-      background-color: #1a1a1a;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #1a1a1a; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #ddd; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #000; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    @media (max-width: 600px) {
+      .gallery img { width: 100%; height: auto; }
     }
     .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      z-index: 1000;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 250px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    @media screen and (max-width: 600px) {
-      .gallery img {
-        width: 100%;
-        height: auto;
-      }
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: #fff;
+      padding: 12px 20px; border-radius: 40px;
+      text-decoration: none; font-weight: bold;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Tahirkent Yapı & Tasarım</h1>
     <p>Her Detayda Ustalık</p>
@@ -98,28 +40,29 @@
 
   <section id="hakkimizda">
     <h2>Hakkımızda</h2>
-    <p>15 yılı aşkın tecrübemizle inşaat, tadilat ve iç dekorasyon alanlarında kaliteli hizmet sunmaktayız. Tahirkent Yapı & Tasarım olarak müşterilerimizin yaşam alanlarına değer katmak en büyük hedefimizdir.</p>
+    <p>15 yıllık tecrübe, sayısız proje. Tadilat, dekorasyon, inşaat... Ustalığımız detayda gizli.</p>
   </section>
 
   <section id="hizmetler">
     <h2>Hizmetler</h2>
     <ul>
-      <li>Komple daire tadilatı</li>
-      <li>Banyo & mutfak yenileme</li>
-      <li>Boyama ve badana</li>
-      <li>Parke döşeme</li>
-      <li>Alçıpan & asma tavan</li>
-      <li>Elektrik & sıhhi tesisat işleri</li>
+      <li>Banyo & Mutfak Yenileme</li>
+      <li>Daire Tadilatı</li>
+      <li>Boyama ve Zemin Kaplama</li>
+      <li>Alçıpan & Aydınlatma</li>
     </ul>
   </section>
 
   <section id="galeri">
     <h2>Galeri</h2>
     <div class="gallery">
-      <img src="https://source.unsplash.com/400x300/?interior,home" alt="galeri1">
-      <img src="https://source.unsplash.com/400x300/?kitchen,design" alt="galeri2">
-      <img src="https://source.unsplash.com/400x300/?renovation" alt="galeri3">
-      <img src="https://source.unsplash.com/400x300/?bathroom,decor" alt="galeri4">
+      <img src="https://source.unsplash.com/400x300/?construction" alt="inşaat görseli">
+      <img src="https://source.unsplash.com/400x300/?renovation" alt="inşaat görseli">
+      <img src="https://source.unsplash.com/400x300/?kitchen,remodel" alt="inşaat görseli">
+      <img src="https://source.unsplash.com/400x300/?interior,design" alt="inşaat görseli">
+      <img src="https://source.unsplash.com/400x300/?bathroom,modern" alt="inşaat görseli">
+      <img src="https://source.unsplash.com/400x300/?livingroom,decor" alt="inşaat görseli">
+
     </div>
   </section>
 
@@ -135,6 +78,5 @@
   <footer>
     <p>&copy; 2025 Tahirkent Yapı & Tasarım</p>
   </footer>
-
 </body>
 </html>
