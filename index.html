@@ -2,31 +2,27 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tahirkent Yapı & Tasarım</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #1a1a1a; color: #fff; padding: 20px; text-align: center; }
-    nav { background: #ddd; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #000; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
-    @media (max-width: 600px) {
-      .gallery img { width: 100%; height: auto; }
-    }
-    .whatsapp {
-      position: fixed; bottom: 20px; right: 20px;
-      background: #25D366; color: #fff;
-      padding: 12px 20px; border-radius: 40px;
-      text-decoration: none; font-weight: bold;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+    header { background: #1a1a1a; color: #fff; text-align: center; padding: 30px 20px; }
+    header img { max-height: 120px; margin-bottom: 10px; }
+    nav { background: #e0e0e0; padding: 12px; text-align: center; }
+    nav a { margin: 0 20px; text-decoration: none; font-weight: bold; color: #000; }
+    section { max-width: 1000px; margin: auto; padding: 40px 20px; background: #fff; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05);}
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 6px; }
+    ul li { margin: 10px 0; line-height: 1.6; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    footer { text-align: center; background: #222; color: #fff; padding: 20px; margin-top: 40px; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 12px 18px; border-radius: 30px; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Tahirkent Logo"/>
     <h1>Tahirkent Yapı & Tasarım</h1>
     <p>Her Detayda Ustalık</p>
   </header>
@@ -40,29 +36,31 @@
 
   <section id="hakkimizda">
     <h2>Hakkımızda</h2>
-    <p>15 yıllık tecrübe, sayısız proje. Tadilat, dekorasyon, inşaat... Ustalığımız detayda gizli.</p>
+    <p>15 yılı aşkın tecrübemizle inşaat ve dekorasyon sektöründe kalite ve güvenin adresiyiz. Tahirkent Yapı & Tasarım olarak, yaşam alanlarınıza estetik, fonksiyonellik ve konfor katmak için çalışıyoruz.</p>
+    <p>Projelerin her aşamasında titizlikle ilerler, müşteri beklentilerini ön planda tutarız. Anahtar teslim tadilatlar, iç mekan dönüşümleri, mimari çözümler ve dekoratif dokunuşlarla fark yaratırız.</p>
   </section>
 
   <section id="hizmetler">
     <h2>Hizmetler</h2>
     <ul>
-      <li>Banyo & Mutfak Yenileme</li>
-      <li>Daire Tadilatı</li>
-      <li>Boyama ve Zemin Kaplama</li>
-      <li>Alçıpan & Aydınlatma</li>
+      <li><strong>Komple Daire Tadilatı:</strong> Duvar yıkım, planlama, zemin & tavan kaplama, her şey dahil dönüşüm.</li>
+      <li><strong>Banyo ve Mutfak Yenileme:</strong> Modern tasarımlar, fonksiyonel çözümler, kaliteli malzeme.</li>
+      <li><strong>İç Mekan Dekorasyonu:</strong> Asma tavan, spot aydınlatma, niş bölmeler, alçıpan uygulamaları.</li>
+      <li><strong>Zemin Kaplama:</strong> Laminant parke, seramik döşeme, mermer işçilik.</li>
+      <li><strong>Elektrik & Su Tesisatı:</strong> Güvenli kablolama, armatür değişimi, kombi montajı, sıhhi tesisat.</li>
+      <li><strong>Dış Cephe & Yalıtım:</strong> Isı yalıtımı, mantolama, dış cephe boyası, çatılar.</li>
     </ul>
   </section>
 
   <section id="galeri">
     <h2>Galeri</h2>
     <div class="gallery">
-      <img src="https://source.unsplash.com/400x300/?construction" alt="inşaat görseli">
-      <img src="https://source.unsplash.com/400x300/?renovation" alt="inşaat görseli">
-      <img src="https://source.unsplash.com/400x300/?kitchen,remodel" alt="inşaat görseli">
-      <img src="https://source.unsplash.com/400x300/?interior,design" alt="inşaat görseli">
-      <img src="https://source.unsplash.com/400x300/?bathroom,modern" alt="inşaat görseli">
-      <img src="https://source.unsplash.com/400x300/?livingroom,decor" alt="inşaat görseli">
-
+      <img src="https://images.unsplash.com/photo-1586105251261-72a756497a12?fit=crop&w=800&q=80" alt="inşaat 1">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=800&q=80" alt="inşaat 2">
+      <img src="https://images.unsplash.com/photo-1615873968403-cf3b99e56f7c?fit=crop&w=800&q=80" alt="dekorasyon 1">
+      <img src="https://images.unsplash.com/photo-1595526114035-524b00ef7c0e?fit=crop&w=800&q=80" alt="banyo">
+      <img src="https://images.unsplash.com/photo-1600585153862-329a525b33e8?fit=crop&w=800&q=80" alt="mutfak">
+      <img src="https://images.unsplash.com/photo-1625072340387-938a4d5659cb?fit=crop&w=800&q=80" alt="salon">
     </div>
   </section>
 
